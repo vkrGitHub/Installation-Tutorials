@@ -3,7 +3,7 @@
 Quick install:
 1. Clone the repo at https://github.com/JanThorbecke/OpenSource
 2. `cp Make_include_template Make_include`
-3. Set the correct ROOT on make include. `pwd` on cloned folder should do:
+3. Set the correct ROOT on `Make_include`. `pwd` on cloned folder should do:
 ```sh
 ...
 #   -3- on Solaris system use RANLIB=ranlib which is defined below
