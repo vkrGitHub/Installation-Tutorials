@@ -16,8 +16,15 @@ ROOT=/home/myhome/folder/folder/OpenSource
 # C compiler; change this only if you are using a different C-compiler
 ...
 ```
-4. Run `make`. This should set everything up.
+4. Run `make`.
 
 More details on the manual at https://janth.home.xs4all.nl/Software/fdelmodcManual.pdf .
 
-
+5. Add the path to binfolder to `~/.bashrc` in order to run the demos:
+```
+export PATH='path/to/OpenSource/bin':$PATH
+```
+then
+```sh
+source ~/.bashrc
+```
