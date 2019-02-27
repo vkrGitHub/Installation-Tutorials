@@ -13,6 +13,17 @@ source ~/.bashrc
 
 cd $CWPROOT/src
 sudo apt-get install build-essential
+```
+
+(optional) For better compatibility with Thorbecke's `fdelmodc`, comment the XDR flag on Makefile.config, as mentioned in fdelmodc's manual: "The examples and demo scripts make use programs of Seismic Unix (SU). Please
+make sure that SU is compiled without XDR: the XDR flag (-DSUXDR) in $CWPROOT/Makefile.config
+must NOT be set in compiling SU. The SU output files of fdelmodc are all base on local IEEE data.
+When the XDR flag is set in SU you have to convert the output files of fdelmodc (and all the programs
+in the utils directory: basop, fconv, extendmodel, makemod, makewave) with suoldtonew, before using
+SU programs."
+
+Finally, make:
+```
 make install
 sudo apt-get install libx11-dev
 sudo apt-get install libxt-dev
