@@ -33,3 +33,12 @@ conda install -m ipykernel --name devito
 python -m  ipykernel install --user
 ```
 taken from https://github.com/jupyter/notebook/issues/1524 and https://github.com/Calysto/matlab_kernel/issues/68 .
+
+# Run Devito with spyder
+
+Install spyder inside devito's environment:
+```
+conda install -n devito spyder
+```
+
+
