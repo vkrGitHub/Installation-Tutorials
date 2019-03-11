@@ -25,7 +25,7 @@ pip install --upgrade git+https://github.com/inducer/codepy
 
 # Notebook errors
 
-'No module named devito' -- set jupyter notebook's correct path:
+Error: 'No module named devito' -- set jupyter notebook's correct path:
 ```
 conda install -m ipykernel --name devito
 python -m  ipykernel install --user
