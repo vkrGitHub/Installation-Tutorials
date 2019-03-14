@@ -29,7 +29,7 @@ More details on the manual at https://janth.home.xs4all.nl/Software/fdelmodcManu
 
 As `fdelmodc` uses Seismic Unix standards, it is better to have SU compiled without the XDRFLAG, to avoid usage of `suoldtonew` (more information at the manual).
 
-5. New version: set `$MKLROOT` correctly, do not forget `$MKLROOT/lib/intel64`. Add all folders on `$MKLROOT/lib` to `$LD_LIBRARY_PATH`. Ex (vi `~/.bashrc`):
+5. New version: set `$MKLROOT` correctly on `Make_include`, do not forget `$MKLROOT/lib/intel64`. Add all folders on `$MKLROOT/lib` to `$LD_LIBRARY_PATH`. Ex (vi `~/.bashrc`):
 ```
 MKLROOT=/opt/intel/2018/mkl
 export LD_LIBRARY_PATH=$MKLROOT/lib/ia32:$MKLROOT/lib/ia32_lin:$MKLROOT/lib/intel64:$MKLROOT/lib/intel64_lin:${LD_LIBRARY_PATH}
