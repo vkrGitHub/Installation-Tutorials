@@ -18,5 +18,9 @@ Links to update ubuntu and correctly install using apt-get:
 https://www.ubuntuupdates.org/package/getdeb_apps/xenial/apps/getdeb/synergy
 https://askubuntu.com/questions/197564/how-do-i-add-a-line-to-my-etc-apt-sources-list
 
-Possible problems after installation:
-- Must assure that both computers are connected through the same wifi, or the same cabled connection. Different wifis won't work.
+
+
+# Troubleshooting
+
+- Make sure that both computers are connected through the same wifi, or the same cabled connection. Different wifis won't work. Check if server's "IP addresses" is the same as in client's "Server IP"
+- On server, "Configure interactively" and add the extra screen corresponding to the client (drag blue computer on top right corner to the correct place). The field "Screen name" on client *must be the same* as the screen name of the "Configure interactively" windows on server.
