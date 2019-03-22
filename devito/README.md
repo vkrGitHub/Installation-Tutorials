@@ -10,6 +10,7 @@ git clone https://github.com/opesci/devito.git
 ```
 3. (5min)
 ```
+cd devito
 conda env create -f environment.yml
 ```
 4. `source activate devito`
