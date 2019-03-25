@@ -53,7 +53,6 @@ Follow Docker instructions on https://github.com/opesci/devito .
 # (5min install, 15min tests):
 docker-compose run devito /tests
 
-# (1min)
 # start a jupyter notebook server on port 8888
 docker-compose up devito
 
