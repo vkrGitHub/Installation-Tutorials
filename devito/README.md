@@ -35,11 +35,39 @@ python -m  ipykernel install --user
 ```
 taken from https://github.com/jupyter/notebook/issues/1524 and https://github.com/Calysto/matlab_kernel/issues/68 .
 
+# Run Devito with Docker (manjaro)
+
+Install docker (install yay first if necessary):
+```
+yay -Sy docker
+yay -Sy docker-compose
+sudo usermod -a -G docker $USER
+```
+The last command is to avoid having to SUDO to use docker. Reboot. 
+Test docker with `docker run hello-world`.
+
+Follow Docker instructions on https://github.com/opesci/devito . 
+
+```
+# run the tests
+# (5min install, 15min tests):
+docker-compose run devito /tests
+
+# (1min)
+# start a jupyter notebook server on port 8888
+docker-compose up devito
+
+# start a bash shell with devito
+docker-compose run devito /bin/bash
+```
+
 # Run Devito with spyder
 
 Install spyder inside devito's environment:
 ```
+source activate devito
 conda install -n devito spyder
 ```
+
 
 
