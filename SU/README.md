@@ -85,7 +85,7 @@ SU programs.
 ```sh
 # Finding stuff you need inside package folder
 find /home/username/ -name "*.err"
-find ~/victor-ROG2018/43R1 -name "Complex"
+find ~/victor-ROG2018/43R1 -name "Complex" 	#substitute ~/victor../ with your personal path to 43R1
 
 # Exports for the compiling step
 echo "export CPATH=$CPATH:~/victor-ROG2018/43R1/:~/victor-ROG2018/43R1/bin:~/victor-ROG2018/43R1/include" >> ~/.bashrc
