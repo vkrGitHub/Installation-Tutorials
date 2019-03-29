@@ -31,8 +31,8 @@ make xtinstall
 ```
 
 # (OPTIONAL) Install nimage
-Copy nimage.c to ~/cwp/43R1/src/xplot/main
-Edit Makefile on ~/cwp/43R1/src/xplot/main, changing
+Copy `nimage.c` to `~/cwp/43R1/src/xplot/main`.  
+Edit the `Makefile` on `~/cwp/43R1/src/xplot/main`, changing
 ```makefile
 PROGS =			\
 	$B/lcmap	\
