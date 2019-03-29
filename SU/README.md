@@ -98,8 +98,3 @@ echo "export LIBRARY_PATH=$LIBRARY_PATH:~/victor-ROG2018/43R1/src/:~/victor-ROG2
 echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/victor-ROG2018/43R1/src/:~/victor-ROG2018/43R1/src/Complex/include/" >> ~/.bashrc
 bash
 
-# Export for the linking step (CUDA libraries)
-echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64" >> ~/.bashrc
-bash
-```
-The last export is not related to SU, but to using CUDA.
