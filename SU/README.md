@@ -30,6 +30,10 @@ sudo apt-get install libxt-dev
 make xtinstall
 ```
 
+## Remake an installation without the XDR flag
+
+Go to cwp->src, edit `Makefile.config` and comment `XDRFLAG=etc`. Inside src folder, `Make remake`.
+
 # (OPTIONAL) Install nimage
 Copy `nimage.c` to `~/cwp/43R1/src/xplot/main`.  
 Edit the `Makefile` on `~/cwp/43R1/src/xplot/main`, changing
