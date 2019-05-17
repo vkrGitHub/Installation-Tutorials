@@ -19,3 +19,7 @@ These instructions set FFTW's path to the same folder of the extracted file, but
 # Enable MPI and OpenMP
 
 TODO. This is achieved by setting more `./config` flags. See http://www.fftw.org/fftw2_doc/fftw_6.html .
+
+# Problems
+
+If there are problems with `log, sincos, cos`, it is because some FFTW functions use the `lm` library. So a good practice is to always include `-lm` when using `-lfftw3f`.
