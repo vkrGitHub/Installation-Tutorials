@@ -1,6 +1,6 @@
 # Install FFTW
 
-Download version from http://www.fftw.org/ .
+Download tar file of desired version from http://www.fftw.org/ .
 
 Almost always we want to use FLOAT functions for FFTW. To use float FFTW functions, use the `--enable-float` flag when running  `./configure`.
 
