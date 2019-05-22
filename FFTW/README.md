@@ -20,7 +20,31 @@ Saving the path to FFTW in a bashrc variable called `FFTWROOT` can also be helpf
 #paste on ~/.bashrc
 
 # FFTW
-FFTWROOT=/path/to/fftw/folder
+export FFTWROOT=/path/to/fftw/folder
+```
+then `source ~/.bashrc` to apply changes.
+
+# Test FFTW
+
+Copy the folder `test-fftw`, which consists of a `Makefile` and a `.c` to test a float FFT on an array of `nt` samples. If you exported `FFTWROOT` on your `~/.bashrc`, fill `INCSPATH` with `$(FFTWROOT)/include` and `LIBSPATH` with `$(FFTWROOT)/lib`, otherwise fill the paths manually. Then:
+```sh
+make
+./simpleR2C.exe 4
+```
+should output:
+```sh
+array[0] = 1.000000
+array[1] = 2.000000
+array[2] = 3.000000
+array[3] = 4.000000
+fouArray[0] = 10.000000 + 0.000000i
+fouArray[1] = -2.000000 + 2.000000i
+fouArray[2] = -2.000000 + 0.000000i
+IFFT
+array[0] = 1.000000
+array[1] = 2.000000
+array[2] = 3.000000
+array[3] = 4.000000
 ```
 
 # Enable MPI and OpenMP
