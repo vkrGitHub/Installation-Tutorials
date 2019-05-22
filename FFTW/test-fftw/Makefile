@@ -8,20 +8,20 @@
 #-I($PATH): look for headers here (besides standard dirs). 
 #-L($PATH): look for libfiles here (besides standard dirs). Only exe's need libfiles.
 
-INCSPATH=
-LIBSPATH=
+INCSPATH=/home/victor.ramalho/fftw-3.3.8/include
+LIBSPATH=/home/victor.ramalho/fftw-3.3.8/lib
 
 MAIN=simpleR2C
 
 all: $(MAIN).exe
 
 $(MAIN).exe: $(MAIN).o 
-	gcc $^ -o $@ -I(INCSPATH) -L(LIBSPATH) -lfftw3f 
-	#gcc $^ -o $@ 
+	gcc $^ -o $@ -I$(INCSPATH) -L$(LIBSPATH) -lfftw3f -lm
 
 $(MAIN).o: $(MAIN).c
-	gcc -c $<
+	gcc -c $< -I$(INCSPATH)
 
 
 clean:
 	rm *.o *.exe
+
