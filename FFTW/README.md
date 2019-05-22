@@ -53,4 +53,4 @@ TODO. This is achieved by setting more `./config` flags. See http://www.fftw.org
 
 # Problems
 
-If there are problems with `log, sincos, cos`, it is because some FFTW functions use the `lm` library. So a good practice is to always include `-lm` when using `-lfftw3f`.
+If there are problems with `log, sincos, cos`, it is because some FFTW functions use the `lm` library. So a good practice is to always link with `-lm` when using `-lfftw3f`.
