@@ -14,7 +14,14 @@ pwd            # save this path to use below in --prefix
 make
 make install
 ```
-These instructions set FFTW's path to the same folder of the extracted file, but a different path could have also been chosen.
+These instructions set FFTW's path to the same folder of the extracted file, but a different path could have also been chosen.  
+Saving the path to FFTW in a bashrc variable called `FFTWROOT` can also be helpful for future Makefiles:
+```sh
+#paste on ~/.bashrc
+
+# FFTW
+FFTWROOT=/path/to/fftw/folder
+```
 
 # Enable MPI and OpenMP
 
