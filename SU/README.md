@@ -7,8 +7,9 @@ cd ~/cwp/43R1
 wget ftp://ftp.cwp.mines.edu/pub/cwpcodes/cwp_su_all_43R1.tgz
 tar -zxvf cwp_su_all_43R1.tgz
 
-echo "export CWPROOT=~/cwp/43R1" >> ~/.bashrc
-echo "export PATH=$PATH:~/cwp/43R1/bin" >> ~/.bashrc
+# pwd this folder, copy the result
+echo "export CWPROOT=pwdresult" >> ~/.bashrc
+echo "export PATH=$PATH:pwdresult/bin" >> ~/.bashrc
 source ~/.bashrc
 
 cd $CWPROOT/src
