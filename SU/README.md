@@ -2,9 +2,9 @@
 (Based on SU's git https://github.com/JohnWStockwellJr/SeisUnix/wiki/Seismic-Unix-install-on-Ubuntu )
 ```sh
 cd
-mkdir -p ~/cwp/43R1
-cd ~/cwp/43R1
-wget ftp://ftp.cwp.mines.edu/pub/cwpcodes/cwp_su_all_43R1.tgz
+mkdir nameyouwant
+cd nameyouwant
+# wget ftp://ftp.cwp.mines.edu/pub/cwpcodes/cwp_su_all_43R1.tgz #doesnt work
 tar -zxvf cwp_su_all_43R1.tgz
 
 # pwd this folder, copy the result
