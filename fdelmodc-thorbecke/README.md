@@ -17,7 +17,7 @@ ROOT=/home/myhome/folder/folder/OpenSource
 ...
 ```
 
-4. Set MKL path on `LD_LIBRARY_PATH`: Add all folders on `$MKLROOT/lib` to `$LD_LIBRARY_PATH`. Ex (vi `~/.bashrc`):
+4. Set MKL path on `LD_LIBRARY_PATH`: Add all lib folders on `$MKLROOT/lib` to `$LD_LIBRARY_PATH` just to be sure. Ex (vi `~/.bashrc`):
 ```
 # MKLROOT=/opt/intel/2018/mkl
 MKLROOT=/your/path/to/mkl
